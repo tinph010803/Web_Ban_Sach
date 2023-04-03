@@ -1,0 +1,75 @@
+:root {
+
+    --main-color: #f67694;
+    --header-footer-text: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: flex-end;
+    /* min-height: 100vh; */
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+div {
+    display: block;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    background-image: url(../images/nav-bar.png);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list {
+    padding-left: 0;
+    display: block;
+    font-size: 18px;
+}
+
+.nav-item {
+    color: #fff;
+    list-style: none;
+    height: 50px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.first-half {
+    background-color: #f7f7f9;
+}
+.first-half a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+ul {
+    display: block;
+}
+
+.nav-bar .nav-list {
+    line-height: 50px; /* chiều cao giữa các dòng*/
+}
+
+.nav-bar .nav-list .link {
+    display: inline-block;
+    height: 50px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 18px;
+}
