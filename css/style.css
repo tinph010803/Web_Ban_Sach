@@ -74,6 +74,7 @@ ul {
     font-size: 18px;
 }
 
+/* CSS Phần HEADER */
 .header {
     position: relative;
     height: 90px;
@@ -151,3 +152,251 @@ h1 {
     background: var(--main-color);
     font-size: 15px;
 }
+/* .icon-giohang{
+  display: flex;
+  border: none;
+} */
+
+/* CSS PHẦN MENU */
+.main {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.main .main-list {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .main-list > li > a { 
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 15px;
+    display: block;
+    color: black;
+}
+.main .main-list > li > a:hover,
+.main .main-list > li > a.current {
+    color: var(--main-color);
+}
+
+/* CSS PHẦN BANNER */
+.home-index-hero {
+    background: white;
+}
+.home-hero-container {
+    position: relative;
+    z-index: 10;
+}
+
+.home-hero {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.home-hero-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* CSS PHẦN ƯU ĐÃI */
+.home-policy-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.item {
+    margin-bottom: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-right: 10px;
+    width: 60px;
+}
+
+.info {
+    font-size: 16px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: var(--main-color);
+    text-align: space-between;
+}
+
+/* CSS PHẦN BÁN CÁC LOẠI SÁCH */
+#home-new-tab {
+    padding: 30px 0 50px;
+}
+#home-new-tab .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+#home-new-tab .hnt-tab {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.text-center {
+    text-align: center;
+}
+#home-new-tab .hnt-tab li {
+    display: inline-block;
+    margin: 0px 26px 8px;
+}
+#home-new-tab .hnt-tab li:hover a,
+#home-new-tab .hnt-tab li.active a {
+    color: var(--main-color);
+    border-bottom-color: var(--main-color);
+}
+
+#home-new-tab .hnt-tab li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+.item-two {
+    margin-bottom: 40px;
+    border-radius: 4px;
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Phần SÁCH */
+.tab-content{
+    display: flex;
+    flex-direction: column;
+}
+.home-sach-moi{
+    display: flex;
+    flex-direction: row;
+}
+.hnt-wrap {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.col-item-book {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    display: flex;
+}
+
+.product-block {
+    margin-bottom: 20px;
+}
+
+.product-block .actions {
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.product-block .actions > a {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    color: #262626;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 45px;
+    width: 40px;
+    left: 30px;
+    margin-bottom: 10px;
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+.product-sale {
+    position: absolute;
+    right: -5px;
+    top: -18px;
+    z-index: 20;
+}
+.sale-lb {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: url(//theme.hstatic.net/200000287623/1000800165/14/discount.png?v=203) no-repeat center;
+    background-size: contain;
+}
+.product-block .product-img {
+    text-align: center;
+    position: relative;
+}
+.img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+h3 {
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    line-height: 24px;
+}
+.product-block .product-detail h3.pro-name a {
+    color: #212121;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-weight: 300;
+}
+.content_price {
+    text-align: center;
+}
+.pro-price {
+    font-size: 16px;
+    color: var(--main-color);
+    display: inline-block;
+    margin-right: 4px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p.pro-price-del {
+    display: inline-block;
+    color: #b0b0b0;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+
