@@ -278,10 +278,9 @@ h1 {
     padding-bottom: 10px;
     border-bottom: 2px solid transparent;
 }
+
+
 .item-two {
-    margin-bottom: 40px;
-    border-radius: 4px;
-    padding: 15px 30px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -393,159 +392,8 @@ p.pro-price-del {
 }
 
 /* CSS PHẦN FOOTER */
-/* footer {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 30px 100px 20px 100px;
-    background: #313131;
-    color: #fff;
-}
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0 15px;
-}
-.contact-footer {
-    padding: 0 15px;
-}
-.contact-footer .marker-first {
-    padding-bottom: 25px;
-}
-.contact-footer i {
-    font-size: 24px;
-    margin-right: 10px;
-    width: 44px;
-    height: 44px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-}
-footer h4 {
-    text-transform: uppercase;
-}
-
-.footer-logo {
-    margin-bottom: 30px;
-}
-.user-foter{
-    display: flex;
-    justify-content: space-between;
-}
-.support {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15px 15px 15px;
-}
-
-.support li {
-    font-size: 15px;
-    list-style: none;
-    cursor: pointer;
-    margin-top: 8px;
-}
-
-.support li a {
-    color: #fff;
-}
-
-.support li a:hover {
-    color: var(--main-color);
-}
-
-.support h4 {
-    margin-bottom: 20px;
-}
-.email {
-    margin-bottom: 10px;
-    padding: 0 15px;
-}
-
-.email h4 {
-    margin-bottom: 10px;
-}
-
-.email p {
-    font-size: 13px;
-    max-width: 400px;
-}
-.input-group {
-    display: flex;
-}
-
-.input-group-field {
-    margin-top: 10px;
-    border-style: none;
-    border-radius: 30px 0px 0px 30px;
-    height: 34px;
-    line-height: 34px;
-    padding: 0px 14px;
-    font-weight: 400;
-    font-size: 14px;
-}
-.email .button-btn1 {
-    text-transform: uppercase;
-    position: absolute;
-    border-style: none;
-    border-radius: 0px 30px 30px 0px;
-    margin-top: 10px;
-    background: var(--main-color);
-    color: #fff;
-    height: 34px;
-    line-height: 34px;
-    padding: 0px 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.email .button-btn1:hover {
-    color: #333;
-}
-.connect-footer {
-    padding: 0 15px;
-}
-
-.fanpage {
-    margin-bottom: 20px;
-}
-
-.icon-footer {
-    margin-top: 10px;
-    display: flex;
-}
-.icon-footer a {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    background: #fff;
-    color: #222;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-right: 20px;
-    text-align: center;
-    transition: all 0.1s;
-}
-
-.icon-footer a:hover {
-    background: var(--main-color);
-    color: #fff;
-    transform: scale(1.2);
-} */
-
-
-/* CSS PHẦN FOOTER */
 footer {
-    /* position: relative; */
-    width: 100%;
+    width: 117%;
     height: auto;
     padding: 30px 100px 20px 100px;
     background: #313131;
@@ -556,13 +404,13 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0 15px;
+    position: relative;
+    right: 80px;
 }
 
 .contact-footer {
     padding: 0 15px;
+    width: 63%;
 }
 
 .contact-footer .marker-first {
@@ -589,6 +437,10 @@ footer h4 {
 
 .footer-logo {
     margin-bottom: 30px;
+}
+
+.user-footer{
+    width: 47%;
 }
 
 .support {
@@ -668,6 +520,7 @@ footer h4 {
 
 .connect-footer {
     padding: 0 15px;
+    width: 28%;
 }
 
 .fanpage {
