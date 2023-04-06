@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/Dangnhap.css">
-    <title>ĐĂNG NHẬP</title>
+    <title>ĐĂNG KÝ</title>
 </head>
 <body>
     <!-- Phần TOP Đăng nhập / Đăng kí-->
@@ -18,10 +18,9 @@
                 <li class="nav-item">DOFLAMINGO</li>
             </ul> 
             <ul class="nav-list">
-                <!-- chưa sử dụng href -->
+            
                 <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>  
-                <li class="nav-item"><span class="sep">|</span></li>
-                <!-- chưa sử dụng href -->
+                <li class="nav-item"><span class="sep">|</span></li> 
                 <li class="nav-item"><a class="link" href="DangKy.html"  title="Đăng ký">Đăng ký</a></li> 
 
             </ul>
@@ -94,11 +93,11 @@
              </div>
         </div>
             
-                <!--  PHẦN ĐĂNG NHẬP -->
+                <!--  PHẦN ĐĂNG KÝ -->
                 <div class="container-dnhap">
                     <div class="container-center">
                         <div class="header-title">
-                            <h2>LOGIN </h2>
+                            <h2>SIGN UP</h2>
                         </div>
                         
                         <form action="" class="form">
@@ -119,14 +118,23 @@
                                     <span class="fas fa-eye" id="togglePassword"></span>
                                 </div>
                             </div>
-                            <label style="margin-left: 15px;" class="remember"><input type="checkbox" /> Nhớ mật khẩu</label>
+                            <div class="form_password">
+                                <div class="form_password-icon form_icon">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="form_password-input form_input">
+                                    <input type="password" id="password" placeholder="Nhập lại mật khẩu" name="password">
+                                    <span class="fas fa-eye" id="togglePassword"></span>
+                                </div>
+                            </div>
+                            
                             <div class="form_submit">
                                 <button type="submit">
-                                    <p style="font-size: 17px;">Log In</p>
+                                    <p style="font-size: 17px;">Sign Up</p>
                                 </button>
                             </div>
-                            <div class="tao-moi">
-                                <p>Tạo tài khoản mới: <a href="DangKy.html">Sign up</a></p>
+                            <div class="dang-nhap">
+                                <p>Đăng nhập: <a href="DangNhap.html">Log in</a></p>
                             </div>
                         </form>
                     </div>
@@ -240,7 +248,7 @@
                                 <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ZaloPay.png" alt="">
                                 <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ShopeePay.png" alt="">
                             </div>
-
+                            
                         </div>               
                         </div>               
                     </div>

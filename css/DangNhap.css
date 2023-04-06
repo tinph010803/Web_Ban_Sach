@@ -70,33 +70,30 @@ input{
     font-size: 17px;
     background-color: #fff;
   }
+  #username,#password{
+    border-radius: 10px;
+  }
   .form_input:hover > input {
     background-color: #ff69b4;
   }
   .form_submit button {
-    width: 90%;
-    height: 100%;
+    width: 30%;
+    height: 80%;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     outline: none;
-    margin-left: 20px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
   }
-  .form_submit button i {
-    color: #ff69b4;
-    font-size: 30px;
-    transition: all 0.4s;
-  }
+  
   .form_submit button:hover {
     background-color: #ff69b4;
     transition: all 0.4s;
   }
-  .form_submit button:hover i {
-    color: #fff;
-    transition: all 0.4s;
-  }
+  
   /*  CSS CON MẮT PASSWORD */
-#togglePassword {
+  #togglePassword {
     position: absolute;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.592);
@@ -104,4 +101,15 @@ input{
     right: 50px;
     transform: translate(0,-50%);
     cursor: pointer;
-}
+  }
+
+  .tao-moi p{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+  }
+  .dang-nhap p{
+    width: 33%;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+  }
+

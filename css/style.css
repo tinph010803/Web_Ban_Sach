@@ -394,7 +394,7 @@ p.pro-price-del {
 
 /* CSS PHẦN FOOTER */
 footer {
-    width: 117%;
+    width: 100%;
     height: auto;
     padding: 30px 100px 20px 100px;
     background: #313131;
@@ -405,13 +405,12 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    right: 80px;
+    
 }
 
 .contact-footer {
     padding: 0 15px;
-    width: 63%;
+    width: 65%;
 }
 
 .contact-footer .marker-first {
@@ -521,7 +520,11 @@ footer h4 {
 
 .connect-footer {
     padding: 0 15px;
-    width: 28%;
+    width: 25%;
+}
+
+.connect{
+    margin-left: 15px;
 }
 
 .fanpage {
