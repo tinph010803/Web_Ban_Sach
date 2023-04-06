@@ -15,6 +15,7 @@ body {
     /* min-height: 100vh; */
     overflow-x: hidden;
     flex-direction: column;
+   
 }
 
 img {
@@ -205,7 +206,7 @@ h1 {
 /* CSS PHẦN ƯU ĐÃI */
 .home-policy-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 16px;
@@ -219,7 +220,7 @@ h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon {
@@ -236,9 +237,9 @@ h1 {
 }
 
 /* CSS PHẦN BÁN CÁC LOẠI SÁCH */
-#home-new-tab {
+/* #home-new-tab {
     padding: 30px 0 50px;
-}
+} */
 #home-new-tab .container {
     width: 100%;
     padding-right: 15px;

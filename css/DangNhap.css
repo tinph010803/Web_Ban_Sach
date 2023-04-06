@@ -1,0 +1,107 @@
+
+/*CSS ĐĂNG NHẬP*/
+
+/* Google font */
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    background-color:#ff69b4;
+  }
+.container-dnhap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Quicksand";
+    
+}
+input{
+    border: none;
+}
+.container-center{
+    background: pink;
+    width: 400px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.header-title {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.form{
+    width: 100%;
+}
+.form > div {
+    height: 50px;
+    margin: 15px 0;
+}
+.form_username,
+.form_password {
+  display: flex;
+}
+.form_icon {
+    font-size: 20px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form_icon i {
+    color: black;
+  }
+  .form_input {
+    width: 100%;
+    position: relative;
+  }
+  .form_input > input {
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: #fff;
+  }
+  .form_input:hover > input {
+    background-color: #ff69b4;
+  }
+  .form_submit button {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+  }
+  .form_submit button i {
+    color: #ff69b4;
+    font-size: 30px;
+    transition: all 0.4s;
+  }
+  .form_submit button:hover {
+    background-color: #ff69b4;
+    transition: all 0.4s;
+  }
+  .form_submit button:hover i {
+    color: #fff;
+    transition: all 0.4s;
+  }
+  /*  CSS CON MẮT PASSWORD */
+#togglePassword {
+    position: absolute;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.592);
+    top: 50%;
+    right: 50px;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
