@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/SanPham.css">
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <!-- Phần TOP Đăng nhập / Đăng kí-->
+    <div class="first-half">
+
+        <div class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item">DOFLAMINGO</li>
+            </ul> 
+            <ul class="nav-list">
+
+                <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>  
+                <li class="nav-item"><span class="sep">|</span></li>
+                <li class="nav-item"><a class="link" href="DangKy.html"  title="Đăng ký">Đăng ký</a></li> 
+
+            </ul>
+        </div>
+        
+        <!-- Phần HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header-logo col-hd-lg">
+                        <h1>
+                            <a href="Home.html">
+                                
+                                <img style="width: 140px; height: 70px;" class="img-responsive" 
+                                    src="../images/logo_tet2.png" alt=""> 
+
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="header-search">
+                            <input class="search-text" name="q" type="search" id="search" placeholder="Tìm kiếm..."><button type="submit" class="search-btn">🔎</button>
+                   
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="topbar-cart">
+                            <div class="shopping-cart">
+                                <!-- <a href="" title="giỏ hàng" rel="nofollow">
+                                    <p class="cart-icon">
+                                        <button class="icon-giohang" ><i class="fa-solid fa-cart-arrow-down"></i></button>
+                                        <span class="cart_quantity">0</span>
+                                    </p>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        <!-- PHẦN MENU -->
+         <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div >
+                        <ul class="main-list">
+                            <li class="main-item" style="display: inline-block;">
+                                <a title="Trang chủ" href="Home.html" class="active-nav"><span>Trang chủ</span></a>
+                            </li>
+                            <li class="main-item" style="display: inline-block;">
+                                <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
+                            </li>
+                            <li class="main-item" style="display: inline-block;">
+                                <a title="Tin tức" href="TinTuc.html"><span>Tin tức</span></a>
+                            </li>
+                            <li class="main-item" style="display: inline-block;">
+                                <a title="Thông tin" href="ThongTin.html"><span>Thông tin</span></a>
+                            </li>
+                            <li class="main-item" style="display: inline-block;">
+                                <a title="Liên hệ" href="LienHe.html"><span>Liên hệ</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                  </div>
+             </div>
+             </div>
+        </div>
+        
+        <!-- PHẦN TẤT CẢ SẢN PHẨM -->
+<!--  
+        <div class="container">
+            <div class="sanpham-header">
+                <div class="list-ds">
+                    <div><a href="Home.html" style="color: rgb(68, 67, 67);">Trang chủ /</a> </div>
+                     <div><a href="SanPham.html" style="color: rgb(68, 67, 67);">Danh mục /</a> </div>
+                    <div><span style="color: rgb(142, 139, 139);">Tất cả sản phẩm</span></div>
+                </div>
+            </div>
+            <div class="danhmuc">
+                <div class="list-group">
+                    <div class="list-group-item" style="font-size: 20px;text-transform: uppercase;border-bottom: 2px solid;">Danh mục</div>
+                </div>
+            </div>
+            <div class="list-menu">
+                <div class="menu-title">
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Trinh Thám - Kinh Dị</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Văn Học Hiện Đại</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Văn Học Kinh Điển</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Fantasy</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Light Novel</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Boys Love</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Boxset</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Sách Học Ngữ</span></a></div>
+                    <div style="margin-top: 15px;"><a href="#" class="title-sach"><span>Manga - Comic</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Sách Thiếu Nhi</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Phụ Kiện</span></a></div>
+                    <div style="margin-top: 15px;"> <a href="#" class="title-sach"><span>Combo Sách</span></a></div>
+
+                </div> 
+                    
+                 <div class="hienthi-sach">
+                    <div class="hienthi-sach-header">
+                        <div class="tat-ca-sach">
+                            <h1 style="font-size: 22px;text-transform: uppercase;margin-left: 167px;">Tất cả sản phẩm</h1>
+                        </div>
+                        <div class="timkiem-sach">
+                            <span id="sapxeptheo">Sắp xếp theo:</span>
+                            <span>
+                               <select name="" id="" class="sort-by custom-dropdown__select custom-dropdown__select--white">
+                                <option value="">Sản phẩm nổi bật</option>
+                                <option value="">Giá: Tăng dần</option>
+                                <option value="">Giá: Giảm dần</option>
+                                <option value="">Tên: A-Z</option>
+                                <option value="">Tên: Z-A</option>
+                                <option value="">Cũ nhất</option>
+                                <option value="">Mới nhất</option>
+                                <option value="">Bán chạy nhất</option>
+                               </select>
+                            </span>
+                        </div>
+                    </div>
+                   
+                 </div>
+            </div>
+
+        </div> -->
+
+
+            <!-- SẢN PHẨM -->
+            <div>
+                <div class="main-content-wrapper">
+                    <div class="collection">
+                        <div class="collection-header">
+                            <div class="containter1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ol class="header-top">
+                                            <li class="change-color"><a href="">Trang chủ</a></li>
+                                            <li class="change-color"><a href="">Danh mục</a></li>
+                                            <li><span>Tất cả sản phẩm</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containter1">
+                            <div class="row1">
+                                <aside class="danhmuc">
+                                    <!-- Title Sách-->
+                                    <div class="list-group news-menu" id="list-group-l">
+                                        <div class="list-group-item active">Danh mục</div>
+
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Trinh Thám - Kinh Dị</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Văn Học Hiện Đại</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Văn Học Kinh Điển</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Fantasy</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Light Novel</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Boys Love</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Boxset</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Sách Học Ngữ</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"><a href="#" class="title-sach"><span>Manga - Comic</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Sách Thiếu Nhi</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Phụ Kiện</span></a></div>
+                                        <div style="margin-top: 15px;margin-left: 10px;"> <a href="#" class="title-sach"><span>Combo Sách</span></a></div>
+
+                                    </div>
+                                </aside>
+
+                                <!--  phần hiển thị các tập truyện -->
+                                <div class="hienthi-truyen">
+                                    <div class="row1">
+                                        <!-- phần trên container -->
+                                        <div class="hienthi-tatca">
+                                            <div class="row1">
+                                                <div class=" tatca-sp">
+                                                    <h1>Tất cả sản phẩm</h1>
+                                                </div>
+                                                <div class="tatca-sp">
+                                                    <div class="sapxep">
+                                                        <span id="sapxeptheo">Sắp xếp theo:</span>
+                                                        <span class="chonlua chonlua--white">
+                                                            <select
+                                                                name=""
+                                                                id=""
+                                                                class="sort-by chonlua__select chonlua__select--white"
+                                                            >
+                                                                <option class="mauchunhat" value="manual">
+                                                                    Sản phẩm nổi bật
+                                                                </option>
+                                                                <option class="mauchunhat" value="price-ascending">
+                                                                    Giá: Tăng dần
+                                                                </option>
+                                                                <option class="mauchunhat" value="price-descending">
+                                                                    Giá: Giảm dần
+                                                                </option>
+                                                                <option class="mauchunhat" value="title-ascending">
+                                                                    Tên: A-Z
+                                                                </option>
+                                                                <option class="mauchunhat" value="title-descending">
+                                                                    Tên: Z-A
+                                                                </option>
+                                                                <option class="mauchunhat" value="created-ascending">
+                                                                    Cũ nhất
+                                                                </option>
+                                                                <option class="mauchunhat" value="created-descending">
+                                                                    Mới nhất
+                                                                </option>
+                                                                <option class="mauchunhat" value="best-selling">
+                                                                    Bán chạy nhất
+                                                                </option>
+                                                            </select>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- phần product truyện -->
+                                        <div class="hienthi-tatca content-product-list">
+                                            <div class="product-list-view row1 grid products-grid">
+                                                <!-- item 1 truyện -->
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block">
+                                                        <div class="product-img ">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-30%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Combo Kindaichi (5 cuốn)">
+                                                                    <img
+                                                                        src="../images/thon_tam_mo.png"
+                                                                        alt=" Combo Kindaichi (5 cuốn) "
+                                                                    />
+                                                                </a>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Combo Kindaichi (5 cuốn)" href="#"
+                                                                    >Combo Kindaichi (5 cuốn)
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;">
+                                                                <p class="pro-price">373,100₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">533,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block">
+                                                        <div class="product-img ">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-30%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Hãy khiến tương lai biết ơn vì hiện tại bạn đã cố gắng hết mình">
+                                                                    <img
+                                                                        src="../images/hay_khien_tuong_lai_biet_on.png"
+                                                                        alt="Hãy khiến tương lai biết ơn vì hiện tại bạn đã cố gắng hết mình "
+                                                                    />
+                                                                </a>
+                                                             
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Hãy khiến tương lai biết ơn vì hiện tại bạn đã cố gắng hết mình" href="#"
+                                                                    >Hãy khiến tương lai biết ơn
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;">
+                                                                <p class="pro-price">84,100₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">99,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block">
+                                                        <div class="product-img ">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-30%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Hành Tinh Của Kẻ Nghĩ Nhiều ">
+                                                                    <img
+                                                                        src="../images/hanh_tinh_cua_mot_ke_nghi_nhieu.png"
+                                                                        alt=" Hành Tinh Của Một Kẻ Nghĩ Nhiều "
+                                                                    />
+                                                                </a>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Hành Tinh Của Một Kẻ Nghĩ Nhiều " href="#"
+                                                                    >Hành Tinh Của Nghĩ Nhiều<a href=""></a> 
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;">
+                                                                <p class="pro-price">73,100₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">86,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block">
+                                                        <div class="product-img ">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-30%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Combo Kindaichi (5 cuốn)">
+                                                                    <img width="99%"
+                                                                        src="../images/hoi_dap_ve_logistics.jpg"
+                                                                        alt=" Hỏi Đáp Về Logistics "
+                                                                    />
+                                                                </a>
+                                                          
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Hỏi Đáp Về Logistics" href="#"
+                                                                    >Hỏi Đáp Về Logistics
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;">
+                                                                <p class="pro-price">170,000₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">200,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block">
+                                                        <div class="product-img ">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-30%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Combo Kindaichi (5 cuốn)">
+                                                                    <img
+                                                                        src="//product.hstatic.net/200000287623/product/thon_tam_mo_-_bia_1_85e8afd326274befb18a24954326e5c4_large.jpg"
+                                                                        alt=" Combo Kindaichi (5 cuốn) "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions ">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Combo Kindaichi (5 cuốn)" href="#"
+                                                                    >Combo Kindaichi (5 cuốn)
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;">
+                                                                <p class="pro-price">373,100₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">533,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  item 2 truyện -->
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-37%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Thượng Dương">
+                                                                    <img
+                                                                        src="../images/thuong_duong.jpg"
+                                                                        alt="  Thượng Dương "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail clearfix">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Thượng Dương" href="#">Thượng Dương </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px">
+                                                                <p class="pro-price">58,040₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">108,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 3 truyện -->
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-10%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Lệ Chi">
+                                                                    <img
+                                                                        src="../images/le_chi.png"
+                                                                        alt="  Lệ Chi "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail clearfix">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;" title="Lệ Chi" href="#">Lệ Chi </a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px">
+                                                                <p class="pro-price">88,200₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">98,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 4 truyện -->
+                                                <div class="col-md-4">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-15%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Mỹ Vị Hầm Ngục - 4">
+                                                                    <img
+                                                                        src="//product.hstatic.net/200000287623/product/my_vi_ham_nguc_4_-_bia1_d85ed0915beb4a488e134ffbd67316b7_large.jpg"
+                                                                        alt=" Mỹ Vị Hầm Ngục - 4 "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail clearfix">
+                                                            <h3 class="pro-name">
+                                                                <a  style="margin-left: 30px;" title="Mỹ Vị Hầm Ngục - 4" href="#"
+                                                                    >Mỹ Vị Hầm Ngục - 4
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price"  style="margin-left: 30px;" >
+                                                                <p class="pro-price">59,500₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">70,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 5 truyện -->
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-55%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Ăn Gì Anh Mua">
+                                                                    <img
+                                                                        src="../images/an_gi_anh_mua.png"
+                                                                        alt=" Ăn Gì Anh Mua "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail clearfix">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;"  title="Ăn Gì Anh Mua" href="#">Ăn Gì Anh Mua </a>
+                                                            </h3>
+                                                            <div class="content_price"  style="margin-left: 30px;" >
+                                                                <p class="pro-price">40,050₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">89,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 6 -->
+                                                <div class="col-md-4">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-23%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Núi Chuột Quét">
+                                                                    <img
+                                                                        src="//product.hstatic.net/200000287623/product/nui_chuot_quet_-_bia_1_1c06c110bb7e469987f61202abba4ca6_large.jpg"
+                                                                        alt="  Núi Chuột Quét  "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail clearfix">
+                                                            <h3 class="pro-name">
+                                                                <a  style="margin-left: 30px;" title="Núi Chuột Quét" href="#">Núi Chuột Quét</a>
+                                                            </h3>
+                                                            <div class="content_price" style="margin-left: 30px;" >
+                                                                <p class="pro-price">146,300₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">190,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 7 -->
+                                                <div class="col-md-4 ">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize view view-third clearfix">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-20%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="BELLE - Rồng Và Công Chúa Tàn Nhang">
+                                                                    <img
+                                                                        src="//product.hstatic.net/200000287623/product/belle_bia_1_c4c13284a73e49b982813c912adc89d6_large.jpg"
+                                                                        alt="  BELLE - Rồng Và Công Chúa Tàn Nhang "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions clearfix">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail">
+                                                            <h3 class="pro-name">
+                                                                <a  style="margin-left: 30px;" title="BELLE - Rồng Và Công Chúa Tàn Nhang" href="#"
+                                                                    >BELLE - Rồng Và Công Chúa Tàn Nhang
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price"  style="margin-left: 30px;" >
+                                                                <p class="pro-price">88,000₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">110,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item 8 -->
+                                                <div class=" col-md-4">
+                                                    <div class="product-block product-resize">
+                                                        <div class="product-img image-resize">
+                                                            <!-- <div class="product-sale">
+                                                                <span class="sale-lb">-20%</span>
+                                                            </div> -->
+                                                            <div class="img">
+                                                                <a href="#" title="Bí Mật Của NaoKo">
+                                                                    <img
+                                                                        src="../images/bi_mat_cua_naoko.jpg"
+                                                                        alt="  Bí Mật Của NaoKo  "
+                                                                    />
+                                                                </a>
+                                                                <!-- 3 nút trên sản phẩm -->
+                                                                <div class="actions ">
+                                                                    <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                    <a
+                                                                        class="btn-add-to-cart ajax_add_to_cart"
+                                                                        title="Thêm vào giở"
+                                                                        href="#"
+                                                                    >
+                                                                        <i class="icon_list"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- phần ghi giá -->
+                                                        <div class="product-detail ">
+                                                            <h3 class="pro-name">
+                                                                <a style="margin-left: 30px;"  title="Bí Mật Của NaoKo" href="#"
+                                                                    >Bí Mật Của NaoKo
+                                                                </a>
+                                                            </h3>
+                                                            <div class="content_price"  style="margin-left: 30px;" >
+                                                                <p class="pro-price">86,000₫</p>
+                                                                <p class="pro-price-del">
+                                                                    <del class="compare-price">108,000₫</del>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                               
+                                               
+                                            </div>
+                                        </div>
+                                        <!-- phần mô tả các trang sau -->
+                                        <div class="col-md-12 pw-default">
+                                            <div class="col-md-8 col-sm-6 col-xs-12 text-center">
+                                                <span class="page-node current">1</span>
+                                                <a href="#" class="page-node">2</a>
+                                                <a href="#" class="page-node">3</a>
+                                                <a href="#" class="page-node">...</a>
+                                                <a href="#" class="page-node">6</a>
+                                            </div>
+
+                                            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+                                                <a href="#" class="pull-right next">
+                                                    <span
+                                                        >Trang sau
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- PHẦN FOOTER -->
+        <div>
+            <footer class="footer-position">
+                <div class="side-footer">
+                    <div class="container">
+                        <div class="contact-footer">
+                            <div class="footer-logo">
+                                <a href="#">
+                                    <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/logo_tet2.png" alt="Doflamingo BookStore">
+                                </a>
+                            </div>
+        
+                            <p class="marker-first">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                            </p>
+                            <p class="marker-first">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Hotline: 0123456789</span>
+                            </p>
+                            <p class="marker-first">
+                                <i class="far fa-envelope"></i>
+                                <span>Email: df.bookstore@gmail.com</span>
+                            </p>
+                            <p>
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                            </p>
+                        </div>
+        
+                        <div class="user-footer">
+                            <div class="support">
+                                <div class="support-user">
+                                    <h4>Hỗ trợ khách hàng</h4>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">Câu hỏi thường gặp</a></li>
+                                            <li><a href="">Điều khoản dịch vụ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="policy">
+                                    <h4>Chính sách</h4> 
+                                    <div>
+                                        <ul> 
+                                            <li><a href="">Chính sách bảo mật</a></li>
+                                            <li><a href="">Chính sách thanh toán</a></li>
+                                            <li><a href="">Chính sách vận chuyển</a></li>
+                                            <li><a href="">Chính sách đổi trả</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-group">
+                                <div class="email">
+                                    <h4>Đăng ký nhận tin</h4>
+                                    <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của 
+                                        ABC</p>
+                                    <div class="input-group">
+                                        <form action="">
+                                            <input type="email" value="" placeholder="Nhập email của bạn..."
+                                                name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
+                                                autocapitalize="off">
+                                        </form>
+                                        <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
+                                            ký</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="connect-footer">
+                            <div class="connect">
+                                <h4>Kết nối với chúng tôi</h4>
+                                <div class="icon-footer">
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <img style=" margin-top: 50px;margin-left: 30px;" src="../images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
+                            <div style="display: flex; justify-content: space-between;">
+                                <img style="width: 25%;margin-top: 30px; " src="../images/logo-momo.png" alt="">
+                                <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ZaloPay.png" alt="">
+                                <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ShopeePay.png" alt="">
+                            </div>
+                            
+                        </div>               
+                        </div>               
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        
+         
+</body>
+</html>
