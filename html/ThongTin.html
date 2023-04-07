@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/DangNhap_DangKy.css">
-    <title>ĐĂNG KÝ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ThongTin.css">
+    <title>Thông Tin</title>
 </head>
 <body>
     <!-- Phần TOP Đăng nhập / Đăng kí-->
@@ -18,9 +18,9 @@
                 <li class="nav-item">DOFLAMINGO</li>
             </ul> 
             <ul class="nav-list">
-            
+
                 <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>  
-                <li class="nav-item"><span class="sep">|</span></li> 
+                <li class="nav-item"><span class="sep">|</span></li>
                 <li class="nav-item"><a class="link" href="DangKy.html"  title="Đăng ký">Đăng ký</a></li> 
 
             </ul>
@@ -92,69 +92,68 @@
              </div>
              </div>
         </div>
-            
-                <!--  PHẦN ĐĂNG KÝ -->
-                <div class="container-dnhap">
-                    <div class="container-center">
-                        <div class="header-title">
-                            <h2>SIGN UP</h2>
-                        </div>
-                        
-                        <form action="" class="form">
-                            <div class="form_username">
-                                <div class="form_username-icon form_icon">
-                                    <i class="fas fa-user-circle"></i>
-                                </div>
-                                <div class="form_username-input form_input">
-                                    <input type="text" id="username" placeholder="Tài khoản" name="username" >
-                                </div>
-                            </div>
-                            <div class="form_password">
-                                <div class="form_password-icon form_icon">
-                                    <i class="fas fa-key"></i>
-                                </div>
-                                <div class="form_password-input form_input">
-                                    <input type="password" id="password" placeholder="Mật khẩu" name="password">
-                                    <span class="fas fa-eye" id="togglePassword"></span>
-                                </div>
-                            </div>
-                            <div class="form_password">
-                                <div class="form_password-icon form_icon">
-                                    <i class="fas fa-key"></i>
-                                </div>
-                                <div class="form_password-input form_input">
-                                    <input type="password" id="password" placeholder="Nhập lại mật khẩu" name="password">
-                                    <span class="fas fa-eye" id="togglePassword"></span>
-                                </div>
-                            </div>
-                            
-                            <div class="form_submit">
-                                <button type="submit">
-                                    <p style="font-size: 17px;">Sign Up</p>
-                                </button>
-                            </div>
-                            <div class="dang-nhap">
-                                <p>Đăng nhập: <a href="DangNhap.html">Log in</a></p>
-                            </div>
-                        </form>
-                    </div>
-                   <script>
-                    const togglePassword=document.getElementById("togglePassword");
-                    const inputPassword=document.getElementById("password");
-                  
-                    togglePassword.addEventListener("click",function() {
-                        togglePassword.classList.toggle("fa-eye-slash");
-                        if(inputPassword.type ==="password") {
-                            inputPassword.type="text";
-                        } else{
-                            inputPassword.type="password";
-                        }
-                    });
-                   </script>
-                </div>
-    
+        
+            <!-- PHẦN THÔNG TIN -->
+        <div class="main-content-wrapper">
+            <div class="container">
+                <div id="layout-page">
+                    <span class="header-page">
+                        <h1 class="gioithieu">Giới thiệu</h1>
+                    </span>
+                    <div class="content-page">
+                        <p>Công ty Cổ phần Xuất bản và Truyền thông DF được thành lập tháng 01 năm 2023 bởi 2
+                            sáng lập viên trẻ tuổi, nhiệt tình và năng động và có ít  kinh nghiệm hoạt động trong
+                            lĩnh vực xuất bản.<br>Đầu năm 2023, DF chính thức hoạt động với vai trò đơn vị xuất bản sách với dấu
+                            ấn rực rỡ là việc đã xuất bản và phát hành thành công trọn bộ tiểu thuyết Kiếm hiệp kỳ ảo
+                            Tru Tiên (Tác giả: Tiêu Đỉnh) - một trong những bộ sách kiếm hiệp nổi tiếng và bán chạy nhất
+                            tại thị trường Trung Quốc - Đài Loan - Hàn Quốc trong vòng 15 năm trở lại đây.<br>Với sự ủng
+                            hộ nhiệt tình và luôn đồng hành của các độc giả trong thời gian qua, chúng tôi xin cam kết
+                            sẽ tiếp tục mang đến những ấn phẩm hay và chất lượng, góp phần làm phong phú thêm cuộc sống
+                            của các quý vị bạn đọc.</p>
+                            <p style="text-align: justify; color:var(--main-color);margin-top: 20px;"><strong>Sản phẩm và dịch vụ</strong></p>
+                            <p style="text-align: justify;">• Xuất bản, phát hành sách và các ấn phẩm văn hóa.<br>• Đại
+                                diện, môi giới bản quyền trong nước và quốc tế (sách, tạp chí, phim ảnh, âm nhạc...).<br>•
+                                Cung cấp các dịch vụ chuyên nghiệp trong lĩnh vực xuất bản: Tổ chức bản thảo, Biên tập,
+                                Thiết kế, Chế bản, Dàn trang, Ra phim, In ấn, Gia công sau in...</p>
 
-                <!-- PHẦN FOOTER -->
+                       
+                        <br>
+                        <br>
+                        <h4 style="text-align: justify; color:var(--main-color);"><span style="font-size:15px"><strong>Tầm nhìn</strong></span>
+                        </h4>
+                        Trở thành đơn vị xuất bản chất lượng tại Việt Nam và
+                            đối tác tin cậy của các Nhà xuất bản trên thế giới.
+                            <div>
+                               
+                                <br>
+                                <br>
+                                <h5 style="text-align: justify; color:var(--main-color);"><span style="font-size:15px"><strong>Sứ mệnh</strong></span></h5>
+                            </div>
+                            <div style="text-align: justify;">Xuất bản các tác phẩm giá trị với chất lượng cao nhằm góp phần
+                                đáp ứng nhu cầu hưởng thụ văn hóa ngày càng cao của độc giả cả nước, góp phần xây dựng và
+                                phát triển một nền văn hóa đọc lành mạnh, phong phú và tiên tiến.</div>
+                            <div>
+
+                            
+                            <br>
+                            <br>
+                              <p style="text-align: justify; color:var(--main-color);"><span style="font-size:15px"><strong>Giá trị cốt
+                                lõi</strong></span></p>
+                               <p style="text-align: justify;">Xây dựng, phát triển mô hình kinh doanh bền vững trên nền
+                                  tảng đảm bảo phục vụ tốt nhất các quyền lợi của khách hàng, nhân viên và các cổ đông.
+                                 </p>
+                             </div>
+                         <div class="ddict_btn" style="top: 447px; left: 121.958px;"><img
+                            src="../images/logo_tet2.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- PHẦN FOOTER -->
         <div>
             <footer class="footer-position">
                 <div class="side-footer">
@@ -242,8 +241,8 @@
                                 </div>
                             </div>
         
-                            <img style=" margin-top: 80px;margin-left: 50px;" src="../images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
-                            <div style="display: flex; justify-content: space-between;margin-left: 50px;">
+                            <img style=" margin-top: 50px;margin-left: 30px;" src="../images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
+                            <div style="display: flex; justify-content: space-between;">
                                 <img style="width: 25%;margin-top: 30px; " src="../images/logo-momo.png" alt="">
                                 <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ZaloPay.png" alt="">
                                 <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ShopeePay.png" alt="">
