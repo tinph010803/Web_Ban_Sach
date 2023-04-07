@@ -140,7 +140,7 @@ div#list-group-l {
     padding-right: 15px;
     padding-left: 15px;
 }
-.col-md-6 {
+.tatcasp {
     width: 50%;
     float: left;
     position: relative;
@@ -148,7 +148,7 @@ div#list-group-l {
     padding-right: 15px;
     padding-left: 15px;
 }
-.col-md-6 h1 {
+.tatca-sp h1 {
     float: left;
     font-size: 22px;
     color: #000000;
@@ -232,7 +232,7 @@ div#list-group-l {
     margin-top: 20px;
 }
 
-.col-md-4 {
+.ten-sp {
     position: relative;
     min-height: 2px;
     width: 25%;
@@ -283,19 +283,19 @@ div#list-group-l {
 
 
 /* phần chân chuyển trang */
-.pw-default {
+.chuyentrang {
     height: 50px;
     padding: 0 15px;
 }
 
-.col-md-8 {
+.cacloaitrang {
     width: 66.66666667%;
     float: left;
     height: 50px;
     padding: 0 15px;
 }
 
-span.page-node.current {
+span.page-node.sotrang {
     background: var(--main-color);
     color: #fff;
     border: 1px solid #e9e9e9;
@@ -321,7 +321,7 @@ a.page-node {
     background-color: #fff;
     font-weight: 100;
 }
-.col-md-2 {
+.trangsau {
     width: 116.25px;
     float: left;
     height: 50px;
@@ -340,9 +340,7 @@ a.next {
     background-color: #fff;
     font-weight: 100;
 }
-.pull-right {
-    float: right !important;
-}
+
 
 a.next span i {
     margin-left: 4px;
@@ -350,17 +348,4 @@ a.next span i {
 
 a.next span {
     padding: 0 13px;
-}
-
-.fa {
-    font-family: 'FontAwesome' !important;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.fa-angle-right:before {
-    content: '\003e' !important;
 }
