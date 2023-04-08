@@ -1,0 +1,55 @@
+#map{
+    margin-top: 15px;
+}
+#contact-lienhe{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+.nhanxet{
+    display: flex;
+    width: 50%;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.name{
+    width: 50%;
+    border-radius: 4px;
+    height: 34px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+}
+.thanhvien{
+    display: flex;
+    flex-direction: column;
+}
+.vietnhanxet{
+    margin-left: 10px;
+}
+.btnGui{
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
+    justify-content: center;
+    border: none;
+   background-color: #337ab7;
+}
+.nhanvien{
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+}
+.ten-nv{
+    display: flex;
+    flex-direction: column;
+
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
