@@ -1,0 +1,36 @@
+.main-img{
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.main-left{
+    width: 50%;
+    margin-left: 50px;
+}
+.img-sach{
+    width: 80%;
+}
+.btn{
+    width: 5%;
+    height: 30px;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+.btn-shopping{
+    width: 20%;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(222, 222, 28, 0.637);
+    border: none;
+    border-radius: 10px;
+}
+.main-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.btn-shopping:hover{
+    background-color: red;
+}
