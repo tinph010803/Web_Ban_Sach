@@ -158,6 +158,97 @@ h1 {
   border: none;
 } */
 
+.shopping_cart {
+    position: relative;
+    padding: 0 15px;
+}
+
+.shopping_cart > a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: unset;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.shopping_cart .cart-icon {
+    position: relative;
+    margin-right: 20px;
+}
+
+.shopping_cart p {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #171516;
+}
+
+.first-half p {
+    margin: 0 0 20px 0;
+    line-height: 21px;
+}
+
+.shopping_cart > a:first-child i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.shopping_cart .cart-icon .icon_list svg {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_list svg {
+    width: 20px;
+    height: 20px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.shopping_cart .cart-icon .cart_quantity {
+    width: 18px;
+    height: 18px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background: #fff;
+    font-size: 14px;
+    color: var(--main-color);
+    position: absolute;
+    top: -5px;
+    right: -16px;
+}
+
+.shopping_cart p {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #171516;
+}
+
+.shopping_cart p span:not(.ajax_cart_quantity) {
+    display: block;
+}
+
+.shopping_cart .cart-icon .icon_list svg path {
+    fill: var(--main-color);
+}
+
+.shopping_cart .top-cart {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
 /* CSS PHẦN MENU */
 .main {
     background: #ffffff;
