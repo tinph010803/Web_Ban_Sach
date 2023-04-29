@@ -1,214 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- InstanceBegin template="../templates/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/TinTuc.css">
     <title>Tin Tức</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/TinTuc.css" />
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- InstanceEndEditable -->
 </head>
+
+
 <body>
-    <!-- Phần TOP Đăng nhập / Đăng kí-->
     <div class="first-half">
+
+        <!-- TOP BAR -->
 
         <div class="nav-bar">
             <ul class="nav-list">
                 <li class="nav-item">DOFLAMINGO</li>
-            </ul> 
+            </ul>
             <ul class="nav-list">
-
-                <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>  
+                <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>
                 <li class="nav-item"><span class="sep">|</span></li>
-                <li class="nav-item"><a class="link" href="DangKy.html"  title="Đăng ký">Đăng ký</a></li> 
+                <li class="nav-item"><a class="link" href="DangKy.html" title="Đăng ký">Đăng ký</a></li>
 
             </ul>
         </div>
-        
-        <!-- Phần HEADER -->
+
+        <!-- HEADER -->
+
         <div class="header">
             <div class="container">
                 <div class="row">
                     <div class="header-logo col-hd-lg">
                         <h1>
-                            <a href="Home.html">
-                                
-                                <img style="width: 140px; height: 70px;" class="img-responsive" 
-                                    src="../images/logo_tet2.png" alt=""> 
+                            <a href="../html/Home.html">
+    
+                                <img style="width: 140px; height: 70px;" class="img-responsive"
+                                    src="../images/logo_tet2.png" alt="">
 
                             </a>
                         </h1>
                     </div>
-
                     <div class="header-search">
-                            <input class="search-text" name="q" type="search" id="search" placeholder="Tìm kiếm..."><button type="submit" class="search-btn">🔎</button>
-                   
-                    </div>
+                        <input class="search-text" name="q" type="search" id="search" placeholder="Tìm kiếm..."><button type="submit" class="search-btn">🔎</button>
+               
+                </div>
 
-                    <div class="header-cart">
-                        <div class="topbar-cart">
-                            <div class="shopping-cart">
-                                <!-- <a href="" title="giỏ hàng" rel="nofollow">
-                                    <p class="cart-icon">
-                                        <button class="icon-giohang" ><i class="fa-solid fa-cart-arrow-down"></i></button>
-                                        <span class="cart_quantity">0</span>
-                                    </p>
-                                </a> -->
-                            </div>
+                <div class="header-cart">
+                    <div class="topbar-cart">
+                        <div class="shopping-cart">
+                            <!-- <a href="" title="giỏ hàng" rel="nofollow">
+                                <p class="cart-icon">
+                                    <button class="icon-giohang" ><i class="fa-solid fa-cart-arrow-down"></i></button>
+                                    <span class="cart_quantity">0</span>
+                                </p>
+                            </a> -->
                         </div>
                     </div>
+                </div>
+                   
 
                 </div>
             </div>
         </div>
-        
-    </div>
-        <!-- PHẦN MENU -->
-         <div class="main">
-            <div class="container">
+
+        <div class="main">
+            <div class="container-fluid">
                 <div class="row">
-                    <div >
-                        <ul class="main-list">
-                            <li class="main-item" style="display: inline-block;">
-                                <a title="Trang chủ" href="Home.html" class="active-nav"><span>Trang chủ</span></a>
+                    
+                    <div id="bar" class="col-12 main-bar w-100">
+                        <ul class="main-list w-100">
+                            <li class="main-item text-decoration-none">
+                                <a style="text-decoration:none !important;" title="Trang chủ"
+                                    href="Home.html"><span>Trang
+                                        chủ</span></a>
                             </li>
-                            <li class="main-item" style="display: inline-block;">
-                                <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Sản phẩm"
+                                    href="SanPham.html"><span>Sản phẩm</span></a>
                             </li>
-                            <li class="main-item" style="display: inline-block;">
-                                <a title="Tin tức" href="TinTuc.html"><span>Tin tức</span></a>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Tin tức" href="TinTuc.html"
+                                    class="active-nav"><span>Tin tức</span></a>
                             </li>
-                            <li class="main-item" style="display: inline-block;">
-                                <a title="Thông tin" href="ThongTin.html"><span>Thông tin</span></a>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Thông tin"
+                                    href="ThongTin.html"><span>Thông tin</span></a>
                             </li>
-                            <li class="main-item" style="display: inline-block;">
-                                <a title="Liên hệ" href="LienHe.html"><span>Liên hệ</span></a>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Liên hệ"
+                                    href="LienHe.html"><span>Liên hệ</span></a>
                             </li>
                         </ul>
                     </div>
-
-                  </div>
-             </div>
-             </div>
-        </div> 
-        
-
-        
-        
-
-
-
-
-
-
-
-
-
-        <!-- PHẦN FOOTER -->
-        <div>
-            <footer class="footer-position">
-                <div class="side-footer">
-                    <div class="container">
-                        <div class="contact-footer">
-                            <div class="footer-logo">
-                                <a href="#">
-                                    <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/logo_tet2.png" alt="Doflamingo BookStore">
-                                </a>
-                            </div>
-        
-                            <p class="marker-first">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
-                            </p>
-                            <p class="marker-first">
-                                <i class="fas fa-phone-alt"></i>
-                                <span>Hotline: 0123456789</span>
-                            </p>
-                            <p class="marker-first">
-                                <i class="far fa-envelope"></i>
-                                <span>Email: df.bookstore@gmail.com</span>
-                            </p>
-                            <p>
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
-                            </p>
-                        </div>
-        
-                        <div class="user-footer">
-                            <div class="support">
-                                <div class="support-user">
-                                    <h4>Hỗ trợ khách hàng</h4>
-                                    <div>
-                                        <ul>
-                                            <li><a href="">Câu hỏi thường gặp</a></li>
-                                            <li><a href="">Điều khoản dịch vụ</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-        
-                                <div class="policy">
-                                    <h4>Chính sách</h4> 
-                                    <div>
-                                        <ul> 
-                                            <li><a href="">Chính sách bảo mật</a></li>
-                                            <li><a href="">Chính sách thanh toán</a></li>
-                                            <li><a href="">Chính sách vận chuyển</a></li>
-                                            <li><a href="">Chính sách đổi trả</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="email-group">
-                                <div class="email">
-                                    <h4>Đăng ký nhận tin</h4>
-                                    <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của 
-                                        ABC</p>
-                                    <div class="input-group">
-                                        <form action="">
-                                            <input type="email" value="" placeholder="Nhập email của bạn..."
-                                                name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
-                                                autocapitalize="off">
-                                        </form>
-                                        <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
-                                            ký</button>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="connect-footer">
-                            <div class="connect">
-                                <h4>Kết nối với chúng tôi</h4>
-                                <div class="icon-footer">
-                                    <a href="">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-        
-                            <img style=" margin-top: 50px;margin-left: 30px;" src="../images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
-                            <div style="display: flex; justify-content: space-between;">
-                                <img style="width: 25%;margin-top: 30px; " src="../images/logo-momo.png" alt="">
-                                <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ZaloPay.png" alt="">
-                                <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ShopeePay.png" alt="">
-                            </div>
-                            
-                        </div>               
-                        </div>               
-                    </div>
+                   
                 </div>
-            </footer>
+            </div>
         </div>
 
+        <!-- MAIN -->
 
-        
-         
+        <div class="main-content-wrapper">
+
+            <div class="container">
+                <div class="row">
+                    <!--Begin Content-->
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                <!-- Begin: Nội dung blog -->
+                                <div class="content-blog">
+                                    <div class="topLine">
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                            <a
+                                                href="../html/ChiTietTinTuc.html">
+                                                <img src="../images/hai_so_phan.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                            <h2>
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">[HƯỚNG
+                                                    DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH
+                                                    NHẤT</a>
+                                            </h2>
+
+                                            <span>15/12/2022</span>
+
+                                            <span><a href="#"> TIN TỨC </a></span>
+                                            <span><em class="views">
+                                                    <i class="comment-icon fa fa-comments-o"></i>
+                                                    <a
+                                                        href="../html/ChiTietTinTuc.html">
+                                                        0 Bình luận
+                                                    </a>
+                                                </em></span>
+                                            <p>
+                                                Thân gửi Quý độc giả của IPM,Nếu bạn ở Hà Nội, đặt sách tại website
+                                                ipm.vn và có mong muốn lấy hàng trực tiếp, bạn có thể lựa chọn
+                                                phương thức "Nhận hàng tại cửa hàng" và tới nhận sách tại địa chỉ:
+                                                Số 110 Nguyễn Ngọc Nại, Phường Khương Mai, Quận Thanh Xuân, Hà Nội.
+                                                Với hình thức giao...
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">Xem
+                                                    thêm <i class="fa fa-arrow-right"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="topLine">
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                            <a
+                                                href="../html/ChiTietTinTuc.html">
+                                                <img src="../images/thuong_duong.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                            <h2>
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">[ĐIỂM
+                                                    SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ
+                                                    LÙNG CỦA OTSUICHI</a>
+                                            </h2>
+
+                                            <span>14/12/2022</span>
+
+                                            <span><a href="#"> TIN TỨC </a></span>
+                                            <span><em class="views">
+                                                    <i class="comment-icon fa fa-comments-o"></i>
+                                                    <a
+                                                        href="../html/ChiTietTinTuc.html">
+                                                        0 Bình luận
+                                                    </a>
+                                                </em></span>
+                                            <p>
+                                                Otsuichi là tác giả truyện trinh thám kinh dị quen thuộc của độc giả
+                                                Việt Nam với nhiều tác phẩm được liệt vào hàng “không thể ngừng
+                                                đọc”. Đó là “Zoo”, là “Calling you”, là “Mắt đá”. Và lần này, IPM
+                                                cho ra mắt “Lời nguyền Shiraisan” phiên bản tiếng Việt.Ở giai đoạn
+                                                đầu sự nghiệp, các tác phẩm của...
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">Xem
+                                                    thêm <i class="fa fa-arrow-right"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="topLine">
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                            <a
+                                                href="../html/ChiTietTinTuc.html">
+                                                <img src="../images/tet_la_day.png" />
+                                            </a>
+                                        </div>
+                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                            <h2>
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">[ĐIỂM
+                                                    SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG
+                                                    GIỌNG VĂN ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG</a>
+                                            </h2>
+
+                                            <span>13/12/2022</span>
+
+                                            <span><a href="#"> TIN TỨC </a></span>
+                                            <span><em class="views">
+                                                    <i class="comment-icon fa fa-comments-o"></i>
+                                                    <a
+                                                        href="../html/ChiTietTinTuc.html">
+                                                        0 Bình luận
+                                                    </a>
+                                                </em></span>
+                                            <p>
+                                                Gấp trang cuối cuốn sách, nhìn lại quá trình đọc Chiêng Nguyện Hồn
+                                                Ai, độc giả sẽ không khỏi ngạc nhiên bởi toàn bộ cuốn sách là một
+                                                giọng văn hết sức lãnh đạm nhưng lại khiến ta không thể rời mắt khỏi
+                                                mạch truyện.Chiêng Nguyện Hồn Ai&nbsp;của tác giả Wangyuan – Vương
+                                                Nguyên đạt giải Nhất Giải thưởng Trinh...
+                                                <a
+                                                    href="../html/ChiTietTinTuc.html">Xem
+                                                    thêm <i class="fa fa-arrow-right"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pagination-blog">
+                                    <div class="row">
+                                        <!-- Begin: Phân trang blog -->
+                                        <div id="pagination" class="pw col-12">
+                                            <div class="row justify-content-between align-items-center">
+
+                                                <div class="col-lg-9 col-md-9 col-8">
+                                                    <div class="text-center">
+                                                        <span class="page-node current">1</span>
+
+                                                        <a class="page-node" href="../html/TinTuc.html">2</a>
+
+                                                        <a class="page-node" href="../html/TinTuc.html">3</a>
+
+                                                        <span class="page-node">…</span>
+
+                                                        <a class="page-node" href="../html/TinTuc.html">9</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-4 hidden-xs">
+                                                    <a class="" href="../html/TinTuc.html">
+                                                        <span>
+                                                            <i class="fa fa-angle-right"></i>Trang sau
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <!-- End: Phân trang blog -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 hidden-sm hidden-xs">
+                                <!-- Begin sidebar blog -->
+                                <div class="sidebar">
+                                    <!-- Begin: Danh mục tin tức -->
+                                    <div class="news-menu list-group">
+                                        <span class="list-group-item active">Danh mục </span>
+                                        <ul class="nav sidebar" id="menu-blog">
+                                            <li class="first">
+                                                <a href="../html/Home.html">
+                                                    <span>Trang chủ</span>
+                                                </a>
+                                            </li>
+                                            <li class="current active">
+                                                <a href="../html/TinTuc.html">
+                                                    <span>Tin tức</span>
+                                                </a>
+                                            </li>
+
+                                            <li class=" ">
+                                                <a href="../html/SanPham.html">
+                                                    <span>Sản phẩm</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="last">
+                                                <a href="../html/LienHe.html">
+                                                    <span>Liên hệ</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <!-- End: Danh mục tin tức -->
+
+                                    <!--Begin: Bài viết mới nhất-->
+                                    <div class="news-latest list-group">
+                                        <span class="list-group-item active"> Bài viết mới nhất </span>
+
+                                        <div class="article">
+                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                <a
+                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">
+                                                    <img src="//file.hstatic.net/200000287623/article/mot_so_quy_tac_khi_nhan_sach_tai_cua_hang_ipm_f7ed766bc825454bb03a2b587f59ddbe_large.png"
+                                                        alt="[HƯỚNG DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH NHẤT" />
+                                                </a>
+                                            </div>
+
+                                            <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                <a
+                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">[HƯỚNG
+                                                    DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM
+                                                    NHANH...</a><span class="date"> <i
+                                                        class="time-date"></i>10/01/2023</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="article">
+                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">
+                                                    <img src="//file.hstatic.net/200000287623/article/z3901175290386_372ca62f537ec867edcc6b1c0b6b26a7_981dd76900884b1a8f80c953842ca1aa_large.jpg"
+                                                        alt="[ĐIỂM SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ LÙNG CỦA OTSUICHI" />
+                                                </a>
+                                            </div>
+
+                                            <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">[ĐIỂM
+                                                    SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH
+                                                    DỊ...</a><span class="date"> <i
+                                                        class="time-date"></i>15/02/2023</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="article">
+                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">
+                                                    <img src="//file.hstatic.net/200000287623/article/z3629472927173_0186d1cc59c535bdea9e11b89697d884__1__269bf08cf2fe4e6885e644a07f7e21e3_large.jpg"
+                                                        alt="[ĐIỂM SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG GIỌNG VĂN ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG" />
+                                                </a>
+                                            </div>
+
+                                            <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">[ĐIỂM
+                                                    SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC
+                                                    BẰNG...</a><span class="date"> <i
+                                                        class="time-date"></i>19/03/2022</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="article">
+                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do">
+                                                    <img src="//file.hstatic.net/200000287623/article/hinh_canh_mat_tri_trinh_tham_trung_quoc_chan_ho_kei_553c5598e7754a6ea73b48b3b166b048_large.jpg"
+                                                        alt="[ĐIỂM SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ ĐÔ" />
+                                                </a>
+                                            </div>
+
+                                            <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do">[ĐIỂM
+                                                    SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ...</a><span
+                                                    class="date"> <i class="time-date"></i>20/01/2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End: Bài viết mới nhất-->
+                                </div>
+                                <!-- End sidebar blog -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Content-->
+                </div>
+            </div>
+        </div>
+
+        <!-- InstanceEndEditable -->
+    </div>
+
+
+
+
+    <!-- FOOTET -->
+
+    <div>
+        <footer class="footer-position">
+            <div class="side-footer">
+                <div class="container">
+                    <div class="contact-footer">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/logo_tet2.png" alt="Doflamingo BookStore">
+                            </a>
+                        </div>
+    
+                        <p class="marker-first">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Hotline: 0123456789</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="far fa-envelope"></i>
+                            <span>Email: df.bookstore@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                        </p>
+                    </div>
+    
+                    <div class="user-footer">
+                        <div class="support">
+                            <div class="support-user">
+                                <h4>Hỗ trợ khách hàng</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                        <li><a href="">Điều khoản dịch vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="policy">
+                                <h4>Chính sách</h4> 
+                                <div>
+                                    <ul> 
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Chính sách thanh toán</a></li>
+                                        <li><a href="">Chính sách vận chuyển</a></li>
+                                        <li><a href="">Chính sách đổi trả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email-group">
+                            <div class="email">
+                                <h4>Đăng ký nhận tin</h4>
+                                <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của 
+                                    ABC</p>
+                                <div class="input-group">
+                                    <form action="">
+                                        <input type="email" value="" placeholder="Nhập email của bạn..."
+                                            name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
+                                            autocapitalize="off">
+                                    </form>
+                                    <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
+                                        ký</button>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="connect-footer">
+                        <div class="connect">
+                            <h4>Kết nối với chúng tôi</h4>
+                            <div class="icon-footer">
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <img style=" margin-top: 50px;margin-left: 30px;" src="../images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
+                        <div style="display: flex; justify-content: space-between;">
+                            <img style="width: 25%;margin-top: 30px; " src="../images/logo-momo.png" alt="">
+                            <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ZaloPay.png" alt="">
+                            <img style="width: 25%;margin-top: 30px; " src="../images/Logo-ShopeePay.png" alt="">
+                        </div>
+                        
+                    </div>               
+                    </div>               
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+   
 </body>
+
+<!-- InstanceEnd -->
+
 </html>

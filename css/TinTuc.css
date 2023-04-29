@@ -1,4 +1,49 @@
 /*Css trang Blog*/
+.main {
+	background: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.main .main-list {
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.main .main-list>li {
+	display: inline-block;
+}
+
+.main .main-list>li>a {
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 14px 15px;
+	display: block;
+	color: black;
+}
+
+.main .main-list>li>a:hover,
+.main .main-list>li>a.current {
+	color: var(--main-color);
+}
+
+.main .main-list>li.dropdown {
+	position: relative;
+}
+
+.main .main-list>li.dropdown:hover>ul {
+	display: block;
+}
+
+.main .main-list>li.dropdown>ul {
+	margin: 0;
+}
+
+.main .main-list>li.dropdown>ul ul {
+	left: 100% !important;
+}
 .topLine{
 	font-size: 12px;
 	overflow: auto;
