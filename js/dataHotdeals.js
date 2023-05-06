@@ -67,8 +67,8 @@ const data = [
         kind: "sách in",
         field: "Văn học - Nghệ thuật",
         publishingYear: 2022,
-        form: "Bìa mềm",
-        size: "13 x 18 cm",
+        form: "Bìa cứng",
+        size: "15 x 20 cm",
         imgUrl: "../images/than-thoai-hy-lap.png",
         price: 176000,
     },
@@ -78,9 +78,9 @@ const data = [
         auth: "Jeffrey Archer",
         kind: "sách in",
         field: "Văn học - Nghệ thuật",
-        publishingYear: 1979,
+        publishingYear: 1989,
         form: "Bìa mềm",
-        size: "13 x 18 cm",
+        size: "15 x 20 cm",
         imgUrl: "../images/hai-so-phan.png",
         price: 124000,
     },
@@ -95,7 +95,7 @@ const data = [
         form: "Bìa mềm",
         size: "13 x 18 cm",
         imgUrl: "../images/ong-gia-va-bien-ca.png",
-        price: 36000,
+        price: 50000,
     },   
     {
         id: 9,
@@ -107,7 +107,7 @@ const data = [
         form: "Bìa mềm",
         size: "13 x 18 cm",
         imgUrl: "../images/sach-con-chut-gi-de-nho-.jpg",
-        price: 968000,
+        price: 96000,
     },
     {
         id: 10,
@@ -125,40 +125,32 @@ const data = [
 
 ]
 
+const container = document.getElementById('books');
 
-const books = document.getElementById("books");
-//render books in homepage
-data.map(book =>{
-    
+        data.forEach(book => {
+            const items = document.createElement('div');
+            items.className = 'items';
 
-    const tml = `<div class="col">
-    <div  class="product-img product">
-        
-        <div class="img">
-            <a href="ChiTietSanPham.html" title="Tên sách">
-                <img  alt=" Lupin siêu trộm" src="${book.imgUrl}">
-            </a>
-            <div class="product-detail ">
-                <h3 class="pro-name">
-                    <a href="ChiTietSanPham.html" title="Lupin siêu trộm">${book.name}</a>
-                </h3>
-                
-                <div class="content_price">
-                    <p class="pro-price">
-                        ${book.price}
-                    </p>
-                  
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> `
-    books.innerHTML += tml;
-})
-const products = document.querySelectorAll('.product')
+            const image = document.createElement('img');
+            image.src = book.imgUrl;
+            image.alt = book.name;
+            items.appendChild(image);
 
-products.forEach((product,index) => {
-    product.addEventListener('click', () => {
+            const title = document.createElement('h4');
+            title.textContent = book.name;
+            items.appendChild(title);
+
+            const price = document.createElement('p');
+            price.textContent = 'Giá: ' + book.price.toLocaleString('vi-VN') + ' VND';
+            items.appendChild(price);
+
+            container.appendChild(items);
+        });
+
+const products = document.querySelectorAll('.items')
+
+products.forEach((items,index) => {
+    items.addEventListener('click', () => {
         localStorage.setItem('book',JSON.stringify(data[index]))
         window.location.href = "ChiTietSanPham.html"
     })

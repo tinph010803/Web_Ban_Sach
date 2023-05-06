@@ -159,10 +159,10 @@ const container = document.getElementById('books');
 
 
 
-const products = document.querySelectorAll('.product')
+const products = document.querySelectorAll('.items')
 
-products.forEach((product,index) => {
-    product.addEventListener('click', () => {
+products.forEach((items,index) => {
+    items.addEventListener('click', () => {
         localStorage.setItem('book',JSON.stringify(data[index]))
         window.location.href = "ChiTietSanPham.html"
     })
