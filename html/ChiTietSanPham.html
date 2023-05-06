@@ -124,43 +124,28 @@
 
 
         <div class="main-img">
-            <div class="main-left">
-                <div class="img-sach">
-                    <img style="width: 100%;margin-bottom: 20px;" src="../images/Arsène_Lupin_sieu_trom_dao_hoa.png" alt="">
-                    <img src="../images//bo-4-lupin.png" alt="">
-                </div>
-            </div>
-            <div class="main-right">
-                <h1><b>Arsène Lupin - Siêu trộm hào hoa- Những cuộc phiêu lưu kì lạ</b></h1>
-                <h3><b>Tác giả:</b> <a href="">Maurice Leblanc</a></h3>
-                <h3><b>Lĩnh vực:</b> Văn học - Nghệ thuật  <span> | Loại sách: sách in</span></h3>
-                <h3><b>Năm xuất bản: </b> <span> 2022</span></h3>
-                <h3><b>Hình thức: </b> <span> Bìa mềm</span></h3>
-                <h3><b>Kích thước: </b> <span> 13 x 18 cm</span></h3>
-                <div>
-                    <img src="../images/4-sao.png" alt="">
-                    <span> (277 đánh giá)</span>
-                    <span><a href="">Click để đánh giá</a></span>
-                </div>
-                <h2 style="color: red;font-size: 35px;">89.000 đ</h2>
-                <h7><span>80.900 đ <span> - 20%</span></span></h7>
+            <div id="detail-book"></div>
+            <div>
                 <h3 style="font-size: 22px;">Vận chuyển:</h3>
                 <h3 style="font-size: 22px;">Giảm 30% phí vận chuyển bởi Thanh Tòng Express (DTT)</h3>
                 <h3 style="font-size: 20px;"><b>Tình trạng: </b><span style="font-size: 17px;margin-left: 20px;color: rgb(79, 79, 223);"> Còn hàng</span></h3>
                 <h3 style="font-size: 20px;"><b>Số lượng: </b></h3>
                 <div>
-                    <button class="btn"> - </button>
-                    <button class="btn" style="width: 7%;"> 1 </button>
-                    <button class="btn"> + </button>
+                    <label for="count">
+
+                        <button class="btn btn-giam "> - </button>
+                    </label>
+                    <!-- <button class="btn" style="width: 7%;"> 1 </button> -->
+                    <input type="number" name="count" id="count">
+                    <label for="count" >
+                        <button class="btn btn-tang"> + </button>
+
+                    </label>
                 </div>
                 <div>
                     <button class="btn-shopping"><i class="fa-sharp fa-solid fa-hand-holding-dollar"> </i> Mua ngay</button>
                     <button style="background-color: aquamarine;margin-left: 30px;" class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Cho vào giỏ hàng</button>
                 </div>
-                
-                
-                
-
             </div>
         </div>
     
@@ -268,7 +253,27 @@
         </div>
 
 
-        
+        <script>
+            const book  = JSON.parse(localStorage.getItem("book"));
+            const detailBook = document.getElementById("detail-book");
+            detailBook.innerHTML = `
+                <div class="main-left">
+                    <div class="img-sach">
+                        <img style="width: 100%;margin-bottom: 20px;" src="${book.imgUrl}" alt="${book.name}">
+                    </div>
+                </div>
+                <div class="main-right">
+                    <h1><b>${book.name}</b></h1>
+                    <h3><b>Tác giả:</b> <a href="">${book.auth}</a></h3>
+                    <h3><b>Lĩnh vực:</b>${book.field}<span> | Loại sách: ${book.kind}</span></h3>
+                    <h3><b>Năm xuất bản: </b> <span> ${book.publishingYear}</span></h3>
+                    <h3><b>Hình thức: </b> <span> ${book.form}</span></h3>
+                    <h3><b>Kích thước: </b> <span>${book.size}</span></h3>
+                    
+                    <h2 style="color: red;font-size: 35px;">${book.price} đ</h2>
+                </div>
+            `
+        </script>
          
 </body>
 </html>

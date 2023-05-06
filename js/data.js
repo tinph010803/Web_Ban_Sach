@@ -121,3 +121,65 @@ const data = [
     },
 
 ]
+
+
+const books = document.getElementById("books");
+//render books in homepage
+data.map(book =>{
+    
+
+    const tml = `<div class="col">
+    <div  class="product-img product">
+        
+        <div class="img">
+            <a href="ChiTietSanPham.html" title="Tên sách">
+                <img  alt=" Lupin siêu trộm" src="${book.imgUrl}">
+            </a>
+            <div class="product-detail ">
+                <h3 class="pro-name">
+                    <a href="ChiTietSanPham.html" title="Lupin siêu trộm">${book.name}</a>
+                </h3>
+                
+                <div class="content_price">
+                    <p class="pro-price">
+                        ${book.price}
+                    </p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> `
+    books.innerHTML += tml;
+})
+const products = document.querySelectorAll('.product')
+
+products.forEach((product,index) => {
+    product.addEventListener('click', () => {
+        localStorage.setItem('book',JSON.stringify(data[index]))
+        window.location.href = "ChiTietSanPham.html"
+    })
+})
+
+
+const users = [
+    {
+        usename: "dasdas",
+        password: "123456",
+        email: "dasdasdsad@adsdas"
+    },
+    {
+        usename: "dasdas",
+        password: "123456",
+        email: "dasdasdsad@adsdas"
+    },
+    {
+        usename: "dasdas",
+        password: "123456",
+        email: "dasdasdsad@adsdas"
+    },
+]
+localStorage.setItem('users',users)
+// updata when user registry sucessfully 
+
+
