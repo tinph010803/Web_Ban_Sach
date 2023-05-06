@@ -124,35 +124,41 @@ const data = [
 ]
 
 
-const books = document.getElementById("books");
-//render books in homepage
-data.map(book =>{
-    
 
-    const tml = `<div class="col">
-    <div  class="product-img product">
-        
-        <div class="img">
-            <a href="ChiTietSanPham.html" title="Tên sách">
-                <img  alt=" Lupin siêu trộm" src="${book.imgUrl}">
-            </a>
-            <div class="product-detail ">
-                <h3 class="pro-name">
-                    <a href="ChiTietSanPham.html" title="Lupin siêu trộm">${book.name}</a>
-                </h3>
-                
-                <div class="content_price">
-                    <p class="pro-price">
-                        ${book.price}
-                    </p>
-                  
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> `
-    books.innerHTML += tml;
-})
+
+const container = document.getElementById('books');
+
+        data.forEach(book => {
+            const items = document.createElement('div');
+            items.className = 'items';
+
+            const image = document.createElement('img');
+            image.src = book.imgUrl;
+            image.alt = book.name;
+            items.appendChild(image);
+
+            const title = document.createElement('h4');
+            title.textContent = book.name;
+            items.appendChild(title);
+
+            const price = document.createElement('p');
+            price.textContent = 'Giá: ' + book.price.toLocaleString('vi-VN') + ' VND';
+            items.appendChild(price);
+
+            container.appendChild(items);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
 const products = document.querySelectorAll('.product')
 
 products.forEach((product,index) => {
