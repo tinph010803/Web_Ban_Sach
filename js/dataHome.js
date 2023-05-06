@@ -112,13 +112,14 @@ const data = [
         name: "Hai Số Phận",
         auth: "Jeffrey Archer",
         kind: "sách in",
-        field: "Truyen",
+        field: "Văn học - Nghệ thuật",
         publishingYear: 1979,
         form: "Bìa mềm",
         size: "13 x 18 cm",
         imgUrl: "../images/hai_so_phan.jpg",
         price: 104000,
     },
+
 
 ]
 
@@ -162,24 +163,5 @@ products.forEach((product,index) => {
 })
 
 
-const users = [
-    {
-        usename: "dasdas",
-        password: "123456",
-        email: "dasdasdsad@adsdas"
-    },
-    {
-        usename: "dasdas",
-        password: "123456",
-        email: "dasdasdsad@adsdas"
-    },
-    {
-        usename: "dasdas",
-        password: "123456",
-        email: "dasdasdsad@adsdas"
-    },
-]
-localStorage.setItem('users',users)
-// updata when user registry sucessfully 
 
 
