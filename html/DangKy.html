@@ -188,28 +188,27 @@
                                 inputPassword.type="password";
     
                             }
-
-                            // Bi loi bam thang o tren moi bam duoc o duoi
-                        //     const togglePasswordAgain=document.getElementById("togglePasswordAgain");
-                        // const inputPasswordAgain=document.getElementById("passwordAgain");
-                      
-                        // togglePasswordAgain.addEventListener("click",function() {
-                        //     if(togglePasswordAgain.classList.contains("fa-eye")){
-                        //         togglePasswordAgain.classList.remove("fa-eye");
-                        //         togglePasswordAgain.classList.add("fa-eye-slash");
-                        //         inputPasswordAgain.type="text";
-    
-                        //     }else{
-                        //         togglePasswordAgain.classList.remove("fa-eye-slash");
-                        //         togglePasswordAgain.classList.add("fa-eye");
-                        //         inputPasswordAgain.type="password";
-    
-                        //     }
-                        // }
-                        // )
-                            
                           
                         });
+                       </script>
+                       <script>
+                                   const togglePasswordAgain=document.getElementById("togglePasswordAgain");
+                        const inputPasswordAgain=document.getElementById("passwordAgain");
+                      
+                        togglePasswordAgain.addEventListener("click",function() {
+                            if(togglePasswordAgain.classList.contains("fa-eye")){
+                                togglePasswordAgain.classList.remove("fa-eye");
+                                togglePasswordAgain.classList.add("fa-eye-slash");
+                                inputPasswordAgain.type="text";
+    
+                            }else{
+                                togglePasswordAgain.classList.remove("fa-eye-slash");
+                                togglePasswordAgain.classList.add("fa-eye");
+                                inputPasswordAgain.type="password";
+    
+                            }
+                        }
+                        )
                        </script>
                 </div>
     
