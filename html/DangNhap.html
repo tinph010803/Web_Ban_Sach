@@ -157,19 +157,25 @@
                             </div>
                         </form>
                     </div>
-                   <script>
-                    const togglePassword=document.getElementById("togglePassword");
-                    const inputPassword=document.getElementById("password");
-                  
-                    togglePassword.addEventListener("click",function() {
-                        togglePassword.classList.toggle("fa-eye-slash");
-                        if(inputPassword.type ==="password") {
-                            inputPassword.type="text";
-                        } else{
-                            inputPassword.type="password";
-                        }
-                    });
-                   </script>
+                    <script>
+                        const togglePassword=document.getElementById("togglePassword");
+                        const inputPassword=document.getElementById("password");
+                      
+                        togglePassword.addEventListener("click",function() {
+                            if(togglePassword.classList.contains("fa-eye")){
+                                togglePassword.classList.remove("fa-eye");
+                                togglePassword.classList.add("fa-eye-slash");
+                                inputPassword.type="text";
+    
+                            }else{
+                                togglePassword.classList.remove("fa-eye-slash");
+                                togglePassword.classList.add("fa-eye");
+                                inputPassword.type="password";
+    
+                            }
+                          
+                        });
+                       </script>
                 </div>
     
 
