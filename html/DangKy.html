@@ -157,8 +157,8 @@
                                     <i class="fas fa-key"></i>
                                 </div>
                                 <div class="form_password-input form_input">
-                                    <input type="password" id="password" placeholder="Nhập lại mật khẩu" name="password">
-                                    <span class="fas fa-eye" id="togglePassword"></span>
+                                    <input type="password" id="passwordAgain" placeholder="Nhập lại mật khẩu" name="password">
+                                    <span class="fas fa-eye" id="togglePasswordAgain"></span>
                                 </div>
                             </div>
                             
@@ -172,19 +172,45 @@
                             </div>
                         </form>
                     </div>
-                   <script>
-                    const togglePassword=document.getElementById("togglePassword");
-                    const inputPassword=document.getElementById("password");
-                  
-                    togglePassword.addEventListener("click",function() {
-                        togglePassword.classList.toggle("fa-eye-slash");
-                        if(inputPassword.type ==="password") {
-                            inputPassword.type="text";
-                        } else{
-                            inputPassword.type="password";
-                        }
-                    });
-                   </script>
+                    <script>
+                        const togglePassword=document.getElementById("togglePassword");
+                        const inputPassword=document.getElementById("password");
+                      
+                        togglePassword.addEventListener("click",function() {
+                            if(togglePassword.classList.contains("fa-eye")){
+                                togglePassword.classList.remove("fa-eye");
+                                togglePassword.classList.add("fa-eye-slash");
+                                inputPassword.type="text";
+    
+                            }else{
+                                togglePassword.classList.remove("fa-eye-slash");
+                                togglePassword.classList.add("fa-eye");
+                                inputPassword.type="password";
+    
+                            }
+
+                            // Bi loi bam thang o tren moi bam duoc o duoi
+                        //     const togglePasswordAgain=document.getElementById("togglePasswordAgain");
+                        // const inputPasswordAgain=document.getElementById("passwordAgain");
+                      
+                        // togglePasswordAgain.addEventListener("click",function() {
+                        //     if(togglePasswordAgain.classList.contains("fa-eye")){
+                        //         togglePasswordAgain.classList.remove("fa-eye");
+                        //         togglePasswordAgain.classList.add("fa-eye-slash");
+                        //         inputPasswordAgain.type="text";
+    
+                        //     }else{
+                        //         togglePasswordAgain.classList.remove("fa-eye-slash");
+                        //         togglePasswordAgain.classList.add("fa-eye");
+                        //         inputPasswordAgain.type="password";
+    
+                        //     }
+                        // }
+                        // )
+                            
+                          
+                        });
+                       </script>
                 </div>
     
 

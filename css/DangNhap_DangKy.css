@@ -73,6 +73,9 @@ input{
   }
   #username,#password{
     border-radius: 10px;
+  } 
+   #username,#passwordAgain{
+    border-radius: 10px;
   }
   .form_input:hover > input {
     background-color: #ff69b4;
@@ -95,6 +98,15 @@ input{
   
   /*  CSS CON MẮT PASSWORD */
   #togglePassword {
+    position: absolute;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.592);
+    top: 50%;
+    right: 50px;
+    transform: translate(0,-50%);
+    cursor: pointer;
+  }
+  #togglePasswordAgain {
     position: absolute;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.592);
