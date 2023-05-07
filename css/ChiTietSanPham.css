@@ -7,21 +7,8 @@
 .main-left{
     width: 50%;
     margin-left: 50px;
-    display: flex;
 }
-.right{
-    display: flex;
-    flex-direction: column;
-}
-.img-sach{
-    width: 80%;
-}
-.btn{
-    width: 5%;
-    height: 30px;
-    background-color: whitesmoke;
-    font-size: 18px;
-}
+
 .btn-shopping{
     width: 50%;
     height: 40px;

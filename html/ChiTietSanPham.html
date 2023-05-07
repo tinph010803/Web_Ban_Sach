@@ -125,33 +125,31 @@
 
 
         <div class="main-img">
-            <div id="detail-book" ></div>
-            <div class="right" style="margin-right: 10%;">
-                <h3 style="font-size: 22px;margin-bottom: 10px;">Vận chuyển:</h3>
-                <h3 style="font-size: 22px;margin-bottom: 10px;">Giảm 30% phí vận chuyển bởi Thanh Tòng Express (DTT)</h3>
-                <h3 style="font-size: 20px;margin-bottom: 10px;"><b>Tình trạng: </b><span style="font-size: 17px;margin-left: 20px;color: rgb(79, 79, 223);"> Còn hàng</span></h3>
-                <h3 style="font-size: 20px;margin-bottom: 10px;"><b>Số lượng: </b></h3>
-                <!-- <div>
-                    <label for="count">
+            <div id="detail-book" >
 
-                        <button class="btn btn-giam "> - </button>
-                    </label>
-                   
-                    <input type="number" name="count" id="count">
-                    <label for="count" >
-                        <button class="btn btn-tang"> + </button>
+            </div>
 
-                    </label>
-                </div> -->
-                <div style="margin-bottom: 10px;" class="buttons_added">
-                    <input class="minus is-form" type="button" value="-">
-                    <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
-                    <input class="plus is-form" type="button" value="+">
-                  </div>
+            
+            <div>
+                <div id="value-top">
+
+                </div>
                 <div>
-                    <!-- <button class="btn-shopping"><i class="fa-sharp fa-solid fa-hand-holding-dollar"> </i> Thêm vào giỏ hàng</button> -->
-                     <button class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Thêm vào giỏ hàng</button>
-                    <!-- <button style="background-color: aquamarine;margin-left: 30px;" class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Cho vào giỏ hàng</button> -->
+                    <h3 style="font-size: 22px;margin-bottom: 10px;">Vận chuyển:</h3>
+                    <h3 style="font-size: 22px;margin-bottom: 10px;">Giảm 30% phí vận chuyển bởi Thanh Tòng Express (DTT)</h3>
+                    <h3 style="font-size: 20px;margin-bottom: 10px;"><b>Tình trạng: </b><span style="font-size: 17px;margin-left: 20px;color: rgb(79, 79, 223);"> Còn hàng</span></h3>
+                    <h3 style="font-size: 20px;margin-bottom: 10px;"><b>Số lượng: </b></h3>
+                    
+                    <div style="margin-bottom: 10px;" class="buttons_added">
+                        <input class="minus is-form" type="button" value="-">
+                        <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                        <input class="plus is-form" type="button" value="+">
+                      </div>
+                    <div>
+                        <!-- <button class="btn-shopping"><i class="fa-sharp fa-solid fa-hand-holding-dollar"> </i> Thêm vào giỏ hàng</button> -->
+                         <button class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Thêm vào giỏ hàng</button>
+                        <!-- <button style="background-color: aquamarine;margin-left: 30px;" class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Cho vào giỏ hàng</button> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,6 +172,37 @@
                 $this.attr('value', d).val(d)
               })
             })
+
+
+
+
+            const book  = JSON.parse(localStorage.getItem("book"));
+            const detailBook = document.getElementById("detail-book");
+            detailBook.innerHTML = `
+                <div class="main-left">
+                    <div class="img-sach">
+                        <img style="width: 1500px;margin-bottom: 50px;margin-left:50px" src="${book.imgUrl}" alt="${book.name}">
+                    </div>
+                </div>
+            `
+            const valueTop = document.getElementById("value-top");
+            valueTop.innerHTML = `
+                <div class="main-right">
+                    <h1 style="margin-bottom: 10px"><b>${book.name}</b></h1>
+                    <h3 style="margin-bottom: 10px"><b>Tác giả:</b> ${book.auth}</h3>
+                    <h3 style="margin-bottom: 10px"><b>Lĩnh vực:</b>${book.field}<span> | Loại sách: ${book.kind}</span></h3>
+                    <h3 style="margin-bottom: 10px"><b>Năm xuất bản: </b> <span> ${book.publishingYear}</span></h3>
+                    <h3 style="margin-bottom: 10px"><b>Hình thức: </b> <span> ${book.form}</span></h3>
+                    <h3 style="margin-bottom: 10px"><b>Kích thước: </b> <span>${book.size}</span></h3>
+                    
+                    <h2 style="color: red;font-size: 35px;">Giá: ${book.price} đ</h2>
+                </div>
+            `
+
+
+
+            
+
             //]]></script>
 
                 <!-- PHẦN FOOTER -->
@@ -279,27 +308,6 @@
         </div>
 
 
-        <script>
-            const book  = JSON.parse(localStorage.getItem("book"));
-            const detailBook = document.getElementById("detail-book");
-            detailBook.innerHTML = `
-                <div class="main-left">
-                    <div class="img-sach">
-                        <img style="width: 1400px;margin-bottom: 50px;margin-left:50px" src="${book.imgUrl}" alt="${book.name}">
-                    </div>
-                </div>
-                <div class="main-right" style="margin-left:50px">
-                    <h1 style="margin-bottom: 10px"><b>${book.name}</b></h1>
-                    <h3 style="margin-bottom: 10px"><b>Tác giả:</b> ${book.auth}</h3>
-                    <h3 style="margin-bottom: 10px"><b>Lĩnh vực:</b>${book.field}<span> | Loại sách: ${book.kind}</span></h3>
-                    <h3 style="margin-bottom: 10px"><b>Năm xuất bản: </b> <span> ${book.publishingYear}</span></h3>
-                    <h3 style="margin-bottom: 10px"><b>Hình thức: </b> <span> ${book.form}</span></h3>
-                    <h3 style="margin-bottom: 10px"><b>Kích thước: </b> <span>${book.size}</span></h3>
-                    
-                    <h2 style="color: red;font-size: 35px;">Giá: ${book.price} đ</h2>
-                </div>
-            `
-        </script>
          
 </body>
 </html>
