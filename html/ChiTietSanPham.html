@@ -147,7 +147,7 @@
                       </div>
                     <div>
                         <!-- <button class="btn-shopping"><i class="fa-sharp fa-solid fa-hand-holding-dollar"> </i> Thêm vào giỏ hàng</button> -->
-                         <button class="btn-shopping"><i class="fa-solid fa-cart-plus" id="count-btn"> </i> Thêm vào giỏ hàng</button>
+                         <button id="count-btn" class="btn-shopping"><i class="fa-solid fa-cart-plus" > </i> Thêm vào giỏ hàng</button>
                         <!-- <button style="background-color: aquamarine;margin-left: 30px;" class="btn-shopping"><i class="fa-solid fa-cart-plus"> </i> Cho vào giỏ hàng</button> -->
                     </div>
                 </div>
@@ -312,14 +312,14 @@
             const countBtn = document.getElementById("count-btn");
             const countProduct = document.getElementById("count-product");
             const cart = JSON.parse(localStorage.getItem("cart")) || [];
-            // cartLength.innerHTML = cart.length;
+            cartLength.innerHTML = cart.length;
 
             countBtn.onclick = ()=>{
                 const numberOfCount = countProduct.value;
                 book.count = +numberOfCount;
                 cart.push(book);
                 localStorage.setItem("cart",JSON.stringify(cart));
-                // cartLength.innerHTML = cart.length;
+                cartLength.innerHTML = cart.length;
             }
             
 
