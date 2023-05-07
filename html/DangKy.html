@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/DangNhap_DangKy.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <title>ĐĂNG KÝ</title>
 </head>
 <body>
@@ -131,38 +133,44 @@
                                 <div class="form_username-icon form_icon">
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
-                                <div class="form_username-input form_input">
-                                    <input type="text" id="username" placeholder="Email" name="email" >
+                                <div class="form_username-input form_input" >
+                                    <input type="text" id="email" placeholder="Email" name="email" >
+                                    <span style="color: red;" class="ma-mes "><i>(*)</i></span>
                                 </div>
+                              
                             </div>
-                            <div class="form_username">
+                           
+                            <div class="form_username" style=" margin-top: 25px;">
                                 <div class="form_username-icon form_icon">
                                     <i class="fas fa-user-circle"></i>
                                 </div>
                                 <div class="form_username-input form_input">
                                     <input type="text" id="username" placeholder="Tài khoản" name="username" >
+                                    <span style="color: red;" class="tk-mes "><i>(*)</i></span>
                                 </div>
                             </div>
-                            <div class="form_password">
+                            <div class="form_password" style=" margin-top: 25px;">
                                 <div class="form_password-icon form_icon">
                                     <i class="fas fa-key"></i>
                                 </div>
                                 <div class="form_password-input form_input">
                                     <input type="password" id="password" placeholder="Mật khẩu" name="password">
                                     <span class="fas fa-eye" id="togglePassword"></span>
+                                    <span style="color: red;" class="mk-mes "><i>(*)</i></span>
                                 </div>
                             </div>
-                            <div class="form_password">
+                            <div class="form_password" style=" margin-top: 25px;">
                                 <div class="form_password-icon form_icon">
                                     <i class="fas fa-key"></i>
                                 </div>
                                 <div class="form_password-input form_input">
                                     <input type="password" id="passwordAgain" placeholder="Nhập lại mật khẩu" name="password">
                                     <span class="fas fa-eye" id="togglePasswordAgain"></span>
+                                    <span style="color: red;" class="remk-mes "><i>(*)</i></span>
                                 </div>
                             </div>
                             
-                            <div class="form_submit">
+                            <div class="form_submit" style=" margin-top: 25px;">
                                 <button type="submit">
                                     <p style="font-size: 17px;">Sign Up</p>
                                 </button>
@@ -317,6 +325,7 @@
 
 
         
+        <script src="../js/validate.js"></script>
          
 </body>
 </html>
