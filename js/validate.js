@@ -31,7 +31,7 @@ function checkTaiKhoan() {
       return true;
     } else {
       $(".tk-mes").html(
-        " Tài khoản không hợp lệ"
+        " Tài khoản 6 ký tự trở lên"
       );
       return false;
     }
