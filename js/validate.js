@@ -80,3 +80,41 @@ $("#email").blur(checkEmail);
 $("#username").blur(checkTaiKhoan);
 $("#password").blur(checkMatKhau);
 $("#passwordAgain").blur(checkReEnterMatKhau);
+
+
+$("#buttondangki").click(function(){
+  if(!checkEmail() || !checkTaiKhoan() || !checkMatKhau() || !checkReEnterMatKhau() ){
+      return false;
+  }
+  let dsTK = JSON.parse(localStorage.getItem("TaiKhoan"));
+  let Email = document.getElementById("email").value
+  let taiKhoan= document.getElementById("username").value
+  let mK = document.getElementById("password").value
+  let xnMatKhau = document.getElementById("passwordAgain").value
+
+  let acc = dsTK.find(x => x.email == Email)
+  let user = dsTK.find(x => x.tk == taiKhoan)
+  if(acc != null){
+    alert("Email đã tồn tại.");
+    return false;
+}
+  if(user != null){
+  alert("Tài khoản đã tồn tại.");
+  return false;
+  }
+  alert("Đăng kí thành công")
+  let a = 
+
+            {
+                email: Email,
+                tk: taiKhoan,
+                matKhau: mK,
+                xacNhanMatKhau: xnMatKhau
+            }
+        dsTK.push(a)
+        localStorage.setItem("TaiKhoan",JSON.stringify(dsTK))
+        return true;
+    })
+
+
+
