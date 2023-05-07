@@ -81,7 +81,7 @@ $("#username").blur(checkTaiKhoan);
 $("#password").blur(checkMatKhau);
 $("#passwordAgain").blur(checkReEnterMatKhau);
 
-
+$("#regisSignUp").submit((e) => e.preventDefault());
 $("#buttondangki").click(function(){
   if(!checkEmail() || !checkTaiKhoan() || !checkMatKhau() || !checkReEnterMatKhau() ){
       return false;

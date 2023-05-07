@@ -18,6 +18,7 @@ $(document).ready(function(){
         return true;
     }
 
+    $("#loginForm").submit((e) => e.preventDefault());
     $("#buttondangnhap").click(function(){
         let flag;
         if(!dangNhap()){
@@ -29,8 +30,7 @@ $(document).ready(function(){
         if(user != null && user.matKhau == matkhau){
             alert("Đăng nhập thành công")
             flag = true;
-            window.open("../html/Home.html","_self").focus();
-            
+            window.location.href = "../html/Home.html";
         } else{
             alert("Sai tài khoản hoặc mật khẩu")
             document.getElementById("username").focus();
