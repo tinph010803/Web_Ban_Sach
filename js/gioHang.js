@@ -7,21 +7,6 @@ let tongTien = 0;
 
 console.log(cart)
 cart.forEach(book => {
-    // container.innerHTML = `
-    // <tr class="text-center align-middle">
-    //     <td class="text-center align-middle">${book.id}</td>
-    //     <td>
-    //         <div class="justify-content-center">
-    //             <img style="width: 200px;" class="img-fluid"
-    //                 src="${book.imgUrl}" alt="">
-    //         </div>
-    //     </td>
-    //     <td class="text-center align-middle">${book.name}</td>
-    //     <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
-    //         name="">${book.count}</td>
-    //     <td class="text-center align-middle"><span>${book.price}</span>đ</td>
-    // </tr> 
-    // `
 
     const items = document.createElement('tr');
     items.className = 'text-center align-middle';
@@ -53,6 +38,8 @@ cart.forEach(book => {
     sl.className = 'text-center align-middle';
     items.appendChild(sl);
     const inp = document.createElement('input');
+    inp.style.textAlign = 'center';
+    inp.style.width = '30%';
     inp.type = 'text';
     inp.value = book.count;
     sl.appendChild(inp);
@@ -70,3 +57,17 @@ cart.forEach(book => {
     tongTien += (book.count * book.price);
 });
 
+const tongCong = document.getElementById('tongcong');
+
+const tong = document.createElement('h5');
+tong.textContent = "Tổng cần thanh toán: " + tongTien.toLocaleString('vi-VN') + ' VND';
+tong.style.textAlign ='right';
+tongCong.appendChild(tong);
+
+const thanhtoanBtn = document.getElementById('checkout');
+
+thanhtoanBtn.addEventListener('click',function(){
+    alert('Thanh toán thành công');
+    localStorage.removeItem('cart');
+    location.reload();
+});
